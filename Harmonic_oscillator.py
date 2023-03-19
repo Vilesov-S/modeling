@@ -1,6 +1,4 @@
 from numpy import arange, sin, pi
-
-
 import matplotlib.pyplot as plt
 
 
