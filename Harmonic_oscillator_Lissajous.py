@@ -41,18 +41,28 @@ class Oscillator():
         plt.xlabel('Время')
         plt.ylabel('Смещение точки')
         plt.grid(True)
+
+    def lissajous(self, other):
+        plt.figure('Lissajous')
+        plt.plot(self.x, other.x)
         
 
 if __name__ == '__main__':
     
-    osc1 = Oscillator(2, 1, t_start=0, t_stop=25)
-    osc2 = Oscillator(1, 1.5, pi, 'r')
-    osc3 = Oscillator(3, 2, 1.5 * pi, 'g', 5, 20)
-    
-    osc1.plotting()
-    osc2.plotting()
-    osc3.plotting()
-    Oscillator.plotting_some(osc1, osc2, osc3)
+##    osc1 = Oscillator(2, 1, t_start=0, t_stop=25)
+##    osc2 = Oscillator(1, 1.5, pi, 'r')
+##    osc3 = Oscillator(3, 2, 1.5 * pi, 'g', 5, 20)
+##    
+##    osc1.plotting()
+##    osc2.plotting()
+##    osc3.plotting()
+##    Oscillator.plotting_some(osc1, osc2, osc3)
+##
+##    plt.show()
 
+    o1 = Oscillator(2, 16)
+    o2 = Oscillator(2, 17, pi / 2, color='r')
+    Oscillator.plotting_some(o1, o2)
+    o1.lissajous(o2)
     plt.show()
 
