@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 class Oscillator():
     '''
-    A - Амплитуда колебаний
+    A - амплитуда колебаний
     fi - начальная фаза колебаний
     w - частота колебаний
     '''
@@ -23,7 +23,6 @@ class Oscillator():
     def plotting(self, color='b'):
         '''
         color - цвет графика
-        n - название / номер графика
         '''
         plt.figure(self._name_)
         plt.plot(self.row_x, self.row_y, color)
