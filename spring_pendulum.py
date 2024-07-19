@@ -7,7 +7,6 @@ from numpy import arange, cos, sin, pi
 
 class Ui_Form(object):
     def setupUi(self, Form):
-        Form.setObjectName("Form")
         Form.resize(1000, 600)
         Form.setMinimumSize(QtCore.QSize(1000, 600))
         Form.setMaximumSize(QtCore.QSize(1000, 600))
@@ -62,7 +61,7 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Spring pendulum", "Spring pendulum"))
         self.label.setText(_translate("Form", " Диапазон = "))
         self.range_values.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
